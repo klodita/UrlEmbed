@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Modifier le lien d'une vidéo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
     <h1>Transformer des liens de Vidéo et Playlist issu de Youtube en Embed </br>
@@ -17,11 +20,17 @@
     <p id="modified-link"></p>
     <label for="modified-url">Lien Video Embed:</label>
     <input type="text" id="modified-url" name="modified-url" readonly>
+    
+    <h3>Enregistrer la Miniature d'une Video Youtube (Pas url de Playist !)</h3>
+    <p> Note : Cette Miniature est en moyenne qualité, il se peut qu'il n'existe pas de miniature dans ce format</p>
+ 
+    <div id="thumbnail-container1">   </div>
+
 
     <!-- POUR TELECHARGER LA MINIATURE D'UNE VIDEO  -->
-    <h2>Enregistrer la Miniature d'une Video Youtube (Pas url de Playist !)</h2>
+    <!-- <h2>Enregistrer la Miniature d'une Video Youtube (Pas url de Playist !)</h2>
     <p> Note : Cette Miniature est en moyenne qualité, il se peut qu'il n'existe pas de miniature dans ce format</p>
-    <div id="thumbnail-container1">   </div>
+  -->
 
     <!-- <label for="miniature-url">Entrez l'URL de la vidéo pour télécharger la miniature:</label>
     <input type="text" id="miniature-url" name="miniature-url">
@@ -58,5 +67,6 @@
     <script src="miniature.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 
-
+ 
 </body>
+</html>
