@@ -21,3 +21,13 @@ function modifyPlaylisteLink() {
         document.getElementById("modified-urlPlayliste").value = "";
     }
 }
+
+async function copyToClipboard3() {
+    try {
+      await navigator.clipboard.writeText(document.getElementById("modified-urlPlayliste").value);
+      alert('Le texte a été copié dans le presse-papiers.');
+    } catch (err) {
+      console.error('Impossible de copier : ', err);
+    }
+  }
+  

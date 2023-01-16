@@ -18,8 +18,8 @@
     <!-- POUR FAIRE L'URL EMBED D'UNE Video -->
     <section id="video">
         <h2>Obtenir le lien Embed d'un vidéo Youtube</h2>
-        <p> Vous devez entrer l'url d'une vidéo youtube, afin de récupérer son ID pour constitué le lien Embed. Les liens de Playlistes ne fonctionneront pas, sauf s'il s'agit 
-            d'url de vidéo issu d'une playliste... Vous avez la possibilité d'enregistrer la Miniature de vos vidéos.
+        <p> Vous devez entrer l'url d'une vidéo youtube, afin de récupérer son ID pour constitué le lien Embed. Les liens de Playliste ne fonctionneront pas, sauf s'il s'agit 
+            d'une url de vidéo issu d'une playliste... Vous avez la possibilité d'enregistrer la Miniature de vos vidéos.
         </p>
 
         <label for="video-url">Entrez l'URL de la vidéo :</label>
@@ -29,6 +29,7 @@
         <p id="modified-link"></p>
         <label for="modified-url">Lien Video Embed:</label>
         <input type="text" id="modified-url" name="modified-url" readonly>
+        <button id="copy-button" onclick="copyToClipboard()">Copier le lien</button>
     </section>
     
     <section id="miniature">
@@ -41,6 +42,7 @@
     <p id="miniature-link"></p>
     <label for="miniature-url">Lien de la miniature:</label>
     <input type="text" id="miniature-url" name="miniature-url" readonly>
+    <button id="copy-button" onclick="copyToClipboard2()">Copier le lien</button>
     </section>
 
 
@@ -63,7 +65,7 @@
     <section id="playliste">
         
     <h2>Obtenir le lien Embed d'une Playliste Youtube</h2>
-    <p> Vous devez avoir le lien exacte de la playliste, ceci ne fonctionnera pas si vous prenez le lien d'une vidéo "normal" car l'id est différent. </p>
+    <p> Vous devez avoir le lien exacte de la playliste, ceci ne fonctionnera pas si vous prenez le lien d'une vidéo "normal" car l'ID est différent. </p>
     <p>Note : Il n'est pas possible de récupérer la Miniature d'une Playliste car nous n'utilisons pas l'API de Youtube, pour contourner ce soucis 
      vous pouvez copier l'url de la première vidéo qui est dans la playliste et la coller dans la partie <span>" OBTENIR LE LIEN EMBED D'UNE VIDEO YOUTUBE"</span>
     afin d'obtenir la miniature pour votre playliste ! </p>
@@ -75,6 +77,7 @@
     <p id="modified-linkPlayliste"></p>
     <label for="modified-urlPlayliste">Lien Playliste Embed :</label>
     <input type="text" id="modified-urlPlayliste" name="modified-urlPlayliste" readonly>
+    <button id="copy-button" onclick="copyToClipboard3()">Copier le lien</button>
     </section>
   
 </div>
@@ -86,14 +89,10 @@
     
 </footer>
     
-   
-
-
     <script src="videolink.js"></script>
     <script src="playlistelink.js"></script>
     <script src="miniature.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 
- 
 </body>
 </html>
