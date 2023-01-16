@@ -20,11 +20,19 @@ function modifyVideoLink() {
         const thumbnail = document.createElement("img");
         //Définit l'URL de l'image
         thumbnail.src = thumbnailUrl;
+        thumbnail.alt = "miniature.jpg"
         // Insère l'image dans le DOM
         document.getElementById("thumbnail-container1").appendChild(thumbnail);
         // Affiche le lien modifié dans le paragraphe
         document.getElementById("modified-link").innerHTML = `Ci-dessous voici l'URL de la vidéo Embed à Copier/Coller dans votre Google Sheet`;
         document.getElementById("modified-url").value = newUrlVideo;
+
+        // Affiche le lien miniature dans le paragraphe
+        document.getElementById("miniature-link").innerHTML = `Ci-dessous voici l'URL de la Miniature`;
+        document.getElementById("miniature-url").value = thumbnail.src;
+
+
+
     }else {
         document.getElementById("modified-link").innerHTML = "l'Url de la Video est incorrecte !";
         document.getElementById("modified-url").value = "";
