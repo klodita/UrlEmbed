@@ -45,11 +45,17 @@ html,body{
 }
 
 input{
+    width: 40%;
+    height: 30px;
     background-color: white;
     border: 1px solid  #654c06 ;
 }
 button{
+    width: 10%;
+    height: 36px;
     background-color:  #654c06;
+    border: none;
+    font-size: 18px;
     color: white;
 }
 #miniature{
@@ -93,7 +99,13 @@ span{
 
     input{
         width: 95%;
-        margin-bottom: 4%;
+        margin-bottom: 2%;
+    }
+
+    button{
+        width: 50%;
+        font-size: 16px;
+        
     }
     #video{
         padding-top: 2%;
