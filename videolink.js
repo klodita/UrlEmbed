@@ -11,11 +11,9 @@ function modifyVideoLink() {
     // Extract the video id from the url
     const videoId = videoWantID.match(pattern);
     const videoId2 = videoWantID.match(pattern2);
-    console.log(videoId2, "essai")
 
     if(videoId){
         const newUrlVideo = `${urlVideoShare}${videoId[1]}`;
-        console.log(newUrlVideo,"ess")
 
         // construit l'URL de la miniature
         const thumbnailUrl = `https://img.youtube.com/vi/${videoId[1]}/mqdefault.jpg`;
@@ -33,14 +31,10 @@ function modifyVideoLink() {
         // Affiche le lien miniature dans le paragraphe
         document.getElementById("miniature-link").innerHTML = `Ci-dessous voici l'URL de la Miniature`;
         document.getElementById("miniature-url").value = thumbnail.src;
-
-
-
     }
 
     else if(videoId2){
         const newUrlVideo = `${urlVideoShare}${videoId2[1]}`;
-        console.log(newUrlVideo,"ess")
 
         // construit l'URL de la miniature
         const thumbnailUrl = `https://img.youtube.com/vi/${videoId2[1]}/mqdefault.jpg`;
@@ -58,33 +52,27 @@ function modifyVideoLink() {
         // Affiche le lien miniature dans le paragraphe
         document.getElementById("miniature-link").innerHTML = `Ci-dessous voici l'URL de la Miniature`;
         document.getElementById("miniature-url").value = thumbnail.src;
-
-
-
     }
     
     else {
         document.getElementById("modified-link").innerHTML = "l'Url de la Video est incorrecte !";
         document.getElementById("modified-url").value = "";
     }
-
-    
-    
 }
 
 async function copyToClipboard() {
     try {
       await navigator.clipboard.writeText(document.getElementById("modified-url").value);
-      alert('Le texte a été copié dans le presse-papiers.');
+      alert('Le lien de la Vidéo Embed a été copié dans le presse-papiers.');
     } catch (err) {
       console.error('Impossible de copier : ', err);
     }
   }
   
-  async function copyToClipboard2() {
+async function copyToClipboard2() {
     try {
       await navigator.clipboard.writeText(document.getElementById("miniature-url").value);
-      alert('Le texte a été copié dans le presse-papiers.');
+      alert('Le lien de la Miniature a été copié dans le presse-papiers.');
     } catch (err) {
       console.error('Impossible de copier : ', err);
     }

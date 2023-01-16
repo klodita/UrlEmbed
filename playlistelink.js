@@ -25,7 +25,7 @@ function modifyPlaylisteLink() {
 async function copyToClipboard3() {
     try {
       await navigator.clipboard.writeText(document.getElementById("modified-urlPlayliste").value);
-      alert('Le texte a été copié dans le presse-papiers.');
+      alert('Le lien de la Playliste a été copié dans le presse-papiers.');
     } catch (err) {
       console.error('Impossible de copier : ', err);
     }
