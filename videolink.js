@@ -12,6 +12,7 @@ function modifyVideoLink() {
 
     if(videoId){
         const newUrlVideo = `${urlVideoShare}${videoId[1]}`;
+        console.log(newUrlVideo,"ess")
 
         // construit l'URL de la miniature
         const thumbnailUrl = `https://img.youtube.com/vi/${videoId[1]}/mqdefault.jpg`;
@@ -22,7 +23,7 @@ function modifyVideoLink() {
         // Insère l'image dans le DOM
         document.getElementById("thumbnail-container1").appendChild(thumbnail);
         // Affiche le lien modifié dans le paragraphe
-        document.getElementById("modified-link").innerHTML = `Voici l'URL de la vidéo embed : ${newUrlVideo}`;
+        document.getElementById("modified-link").innerHTML = `Ci-dessous voici l'URL de la vidéo Embed à Copier/Coller dans votre Google Sheet`;
         document.getElementById("modified-url").value = newUrlVideo;
     }else {
         document.getElementById("modified-link").innerHTML = "l'Url de la Video est incorrecte !";

@@ -14,7 +14,7 @@ function modifyPlaylisteLink() {
         const newUrlPlayliste = `${urlPlaylisteShare}${playlistId[1]}`;
 
         // Affiche le lien modifié dans le paragraphe
-        document.getElementById("modified-linkPlayliste").innerHTML = `Voici l'URL de la playliste Embed : ${newUrlPlayliste}`;
+        document.getElementById("modified-linkPlayliste").innerHTML = `Ci-dessous voici l'URL de la vidéo Embed à Copier/Coller dans votre Google Sheet`;
         document.getElementById("modified-urlPlayliste").value = newUrlPlayliste;
     }else {
         document.getElementById("modified-linkPlayliste").innerHTML = "l'Url de la Playliste est incorrecte !";
