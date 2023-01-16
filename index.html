@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modifier le lien d'une vidéo</title>
+</head>
+<body>
+    <h1>Transformer des liens de Vidéo et Playlist issu de Youtube en Embed </br>
+        Afin de les intégrer dans l'application AppSheet plus facilement</h1>
+
+    <!-- POUR FAIRE L'URL EMBED D'UNE Video -->
+    <h2>Obtenir le lien Embed d'un vidéo Youtube</h2>
+
+    <label for="video-url">Entrez l'URL de la vidéo :</label>
+    <input type="text" id="video-url" name="video-url">
+    <button onclick="modifyVideoLink()">Modifier le lien</button>
+
+    <p id="modified-link"></p>
+    <label for="modified-url">Lien modifié :</label>
+    <input type="text" id="modified-url" name="modified-url" readonly>
+
+    <!-- POUR TELECHARGER LA MINIATURE D'UNE VIDEO  -->
+    <h2>Télécharger la Miniature d'une Video Youtube (Pas url de Playist !)</h2>
+    <p>Attention : si vous souhaitez Télécharger la miniature d'une playiste il faudra mettre l'url de la première </br>
+    Vidéo qui se trouve dans a playiste. Vérifiez que la miniature soit bonne en plaçant le lien de la vidéo dans </br>
+    "OBTENIR LE LIEN EMBED D'UNE VIDEO YOUTUBE"</p>
+    <div id="thumbnail-container1">   </div>
+
+    <label for="miniature-url">Entrez l'URL de la vidéo pour télécharger la miniature:</label>
+    <input type="text" id="miniature-url" name="miniature-url">
+    <button onclick="miniatureDownload()" id="download-link">Télécharger la miniature</button>
+ 
+
+
+
+
+    <!-- POUR FAIRE L'URL EMBED D'UNE Playliste -->
+
+    <h2>Obtenir le lien Embed d'une Playliste Youtube</h2>
+
+    <label for="playliste-url">Entrez l'URL de la Platliste :</label>
+    <input type="text" id="playliste-url" name="playliste-url">
+    <button onclick="modifyPlaylisteLink()">Modifier le lien</button>
+
+    <p id="modified-linkPlayliste"></p>
+    <label for="modified-urlPlayliste">Lien modifié :</label>
+    <input type="text" id="modified-urlPlayliste" name="modified-urlPlayliste" readonly>
+  
+
+    <script>
+        alert('hello World');
+    </script>
+   
+
+
+    <script src="videolink.js"></script>
+    <script src="playlistelink.js"></script>
+    <script src="miniature.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+</body>
