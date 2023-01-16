@@ -77,8 +77,11 @@ span{
 }
 
 @media (max-width:767px){
+
     .TitreSoustitre, .container{
         width: 85%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     .TitreSoustitre h1{
         font-size: 20px;

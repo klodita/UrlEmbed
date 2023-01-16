@@ -17,7 +17,7 @@ function modifyPlaylisteLink() {
         document.getElementById("modified-linkPlayliste").innerHTML = `Ci-dessous voici l'URL de la vidéo Embed à Copier/Coller dans votre Google Sheet`;
         document.getElementById("modified-urlPlayliste").value = newUrlPlayliste;
     }else {
-        document.getElementById("modified-linkPlayliste").innerHTML = "l'Url de la Playliste est incorrecte !";
+        document.getElementById("modified-linkPlayliste").innerHTML = "L'Url de la Playliste est incorrecte !";
         document.getElementById("modified-urlPlayliste").value = "";
     }
 }
