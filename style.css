@@ -51,7 +51,7 @@ input{
     border: 1px solid  #654c06 ;
 }
 button{
-    width: 10%;
+    width: 150px;
     height: 36px;
     background-color:  #654c06;
     border: none;
@@ -75,6 +75,7 @@ span{
     font-weight: 400;
    
 }
+
 
 @media (max-width:767px){
 
@@ -106,7 +107,7 @@ span{
     }
 
     button{
-        width: 50%;
+        width: 120px;
         font-size: 16px;
         
     }
