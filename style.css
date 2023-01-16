@@ -44,6 +44,14 @@ html,body{
 
 }
 
+input{
+    background-color: white;
+    border: 1px solid  #654c06 ;
+}
+button{
+    background-color:  #654c06;
+    color: white;
+}
 #miniature{
     margin-top: 5%;
 }
