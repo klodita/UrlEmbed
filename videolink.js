@@ -20,7 +20,7 @@ function modifyVideoLink() {
         const thumbnail = document.createElement("img");
         //Définit l'URL de l'image
         thumbnail.src = thumbnailUrl;
-        thumbnail.alt = "miniature.jpg"
+        thumbnail.alt = ""
         // Insère l'image dans le DOM
         document.getElementById("thumbnail-container1").appendChild(thumbnail);
         // Affiche le lien modifié dans le paragraphe
